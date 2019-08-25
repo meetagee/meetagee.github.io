@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lam Hoang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+  	min-height: calc(100vh - 95px); 
+    padding: 80px 120px;
+  }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  .nav-tabs li a {
+    color: #777;
+  }
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://tunglam2101.github.io"><span class="glyphicon glyphicon-console"></span><b>LAM HOANG</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://tunglam2101.github.io">ABOUT ME</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">TECHNICAL PROJECTS
+          <span class="caret"></span></a> 	
+          <ul class="dropdown-menu">
+            <li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
+            <li><a href="http://tunglam2101.github.io/techProjs/flynshoot.html">(C/C++) FLY N' SHOOT</a></li>
+            <li><a href="http://tunglam2101.github.io/techProjs/aoc.html">(C++) THE ART OF COMPRESSION</a></li>
+            <li><a href="http://tunglam2101.github.io/techProjs/arc4.html">(SYSTEMVERILOG) ARC4 DECRYPTION</a></li> 
+            <li><a href="http://tunglam2101.github.io/techProjs/vault.html">(PYTHON/HTML/JS) MOBILE VAULT</a></li>
+            <li><a href="http://tunglam2101.github.io/techProjs/graphs.html">(JAVA) GRAPHS, NETWORKS, AND GAMES</a></li>  
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">VOLUNTEER & WORK EXPERIENCE
+          <span class="caret"></span></a> 	
+          <ul class="dropdown-menu">
+            <li><a href="http://tunglam2101.github.io/techProjs/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
+            <li><a href="http://tunglam2101.github.io/techProjs/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
+          </ul>
+        </li>
+        <li><a href="http://tunglam2101.github.io/interests">INTEREST & ACTIVITIES</a></li>
+        <li><a href="http://tunglam2101.github.io/contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Container -->
+<div id="info" class="container">
+  	<h3 class="text-center	"> HI, IT'S LAM!</h3>
+  	<p><em>Welcome to my personal webpage!</em></p>
+  	<p>I am currently a 3rd year Computer Engineering student at the <b>University of British Columbia (UBC)</b> - Vancouver, Canada. I love programming and utilizing my technology-related knowledge on various applications of interests or real-life usefulness.</p> 
+
+	<br></br>
+	
+	<div class="text-center">
+		<img src="https://pl.scdn.co/images/pl/default/d945ae7bab6eafa824483e2316197393b6ff7cd5" alt="Hallo" class="img-thumbnail">
+  	</div>
+  	
+  	<br></br>
+  	
+  	<h2>ABOUT ME</h2>
+
+  	<ul class="nav nav-tabs">
+    	<li class="active"><a data-toggle="tab" href="#home">EDUCATION</a></li>
+    	<li><a data-toggle="tab" href="#menu1">TECHNICAL SKILLS</a></li>
+    	<li><a data-toggle="tab" href="#menu2">AWARDS</a></li>
+  	</ul>
+
+  	<div class="tab-content">
+    	<div id="home" class="tab-pane fade in active">
+    		<h3>University of British Columbia</b> (September 2017 - May 2021)</h3>
+    		<div class="row">
+      			<div class ="col-sm-8">
+			  		<p> <b>Bachelor of Applied Science - Computer Engineering</b>
+			  			<br>
+			  			CPGA: 79.2%
+			  			<br>
+			  			Key Computer Engineering courses:
+			  			<ul>
+			  				<li>Digital Systems Design</li>
+			  				<li>Introduction to Microcomputers </li>
+							<li>Principle of Software Construction</li>
+							<li>Basic Algorithms and Data Structures</li>
+							<li>Basics of Computer Systems</li>
+							<li>Circuit Analysis I</li>
+							<li>Introduction to Computation in Engineering Design</li>
+			  			</ul>
+			  		</p>
+			  	</div>
+			  	<div class ="col-sm-4">
+			  		<img src="http://successinstem.ca/wp-content/uploads/2017/01/ubc-logo.png" alt="ubc" class="img-thumbnail">
+			  	</div>
+			</div>
+    	</div>
+    	
+    	<div id="menu1" class="tab-pane fade">
+    		<div class="row">
+  				<div class="col-sm-4">
+  					<h3>Programming languages:</h3>
+  					<a href="#proglang" data-toggle="collapse">
+        				<img src="https://static.thenounproject.com/png/575613-200.png" class="img-circle person" alt="" style="width:256px; height:256px">
+      				</a>
+      				<div id="proglang" class="collapse">
+		  				<ul>
+		  					<li>C, C++</li>
+		  					<li>Java</li>
+		  					<li>Python</li>
+		  					<li>Verilog, SystemVerilog</li>
+		  					<li>ARM Assembly</li>
+		  					<li>R</li>
+		  					<li>HTML</li>
+		  				</ul>
+		  			</div>
+  				</div>
+  				<div class="col-sm-4">
+  					<h3>Software knowledge:</h3>
+  					<a href="#software" data-toggle="collapse">
+        				<img src="https://png.pngtree.com/svg/20170202/software_development_390387.png" class="img-circle person" alt="" style="width:256px; height:256px">
+      				</a>
+      				<div id="software" class="collapse">
+		  				<ul>
+		  					<li>Linux (Ubuntu)</li>
+		  					<li>Windows 7, 8.1, 10</li>
+		  					<li>Modelsim, Quartus, Intel Monitor Program</li>
+		  					<li>IntelliJ, Microsoft Visual Studio, QtCreator, RStudio</li>
+		  					<li>Microsoft Office Suite</li>
+		  					<li>JUint</li>
+		  					<li>Valgrind</li>
+		  					<li>Git</li>
+		  				</ul>
+		  			</div>
+  				</div>
+  				<div class="col-sm-4">
+  					<h3>Hardware & Lab-related skills:</h3>
+		  			<a href="#hardware" data-toggle="collapse">
+        				<img src="https://static.thenounproject.com/png/228180-200.png" class="img-circle person" alt="" style="width:256px; height:256px">
+      				</a>
+      				<div id="hardware" class="collapse">
+		  				<ul>
+		  					<li>Soldering</li>
+		  					<li>Designing simple circuits with breadboards and components</li>
+		  					<li>Integrating hardware and software into projects</li>
+		  					<li>Preparing and presenting lab reports</li>
+		  				</ul>
+		  			</div>
+  				</div>
+  			</div>
+    	</div>
+    	<div id="menu2" class="tab-pane fade">
+      		<h3>UBC First Year Dean’s Honour List (May, 2017)</h3>
+      		<ul>
+      			<li>"Graduating students and students promoted to second, third, or fourth year with a standing of 80% or better in the previous Winter Session will receive the notation "Dean's Honour List" on their records if they passed all courses completed and carried a course load of at least 27 percentage-graded credits".</li>
+      			<li>Passed all courses and received GPA of 83.5% by the end of first year of university.</li>
+      		</ul>
+			<h3>Outstanding International Student Award (OIS Award) (September, 2016)</h3>
+			<ul>
+      			<li>"OIS Award is a one-time, merit-based entrance scholarship awarded to qualified students when they are offered admission to UBC. Students selected for this award show strength academically and display involvement outside of the classroom."</li>
+      			<li>Automatically got considered for the scholarship after receving offer of admission to UBC.</li>
+      		</ul>
+    	</div>
+  	</div>
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>TUNG LAM HOANG - 2019</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
+

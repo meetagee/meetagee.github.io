@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style>
   body {
@@ -146,12 +147,16 @@
   textarea {
     resize: none;
   }
+  [aria-expanded="false"] > .expanded,
+  [aria-expanded="true"] > .collapsed {
+  	display: none;
+  }
   </style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -163,9 +168,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://tunglam2101.github.io">ABOUT ME</a></li>
+        <li><a href="http://tunglam2101.github.io">ABOUT</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">TECHNICAL PROJECTS
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
           <span class="caret"></span></a> 	
           <ul class="dropdown-menu">
             <li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
@@ -177,15 +182,14 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">VOLUNTEER & WORK EXPERIENCE
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIENCES
           <span class="caret"></span></a> 	
           <ul class="dropdown-menu">
             <li><a href="http://tunglam2101.github.io/experience/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
             <li><a href="http://tunglam2101.github.io/experience/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
           </ul>
         </li>
-        <li><a href="http://tunglam2101.github.io/interests">INTEREST & ACTIVITIES</a></li>
-        <li><a href="http://tunglam2101.github.io/contact">CONTACT</a></li>
+        <li><a href="http://tunglam2101.github.io/interests">INTERESTS</a></li>
       </ul>
     </div>
   </div>
@@ -553,9 +557,17 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>TUNG LAM HOANG - 2019</a></p> 
+  <p><b>Lam Hoang - 2019</b></p>
+  <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC, Canada</p>
+  <p class="text-center"><span class="glyphicon glyphicon-phone"></span> Phone: 604-367-2051</p>
+  <p class="text-center"><span class="glyphicon glyphicon-envelope"></span> Email: minigaru2101@gmail.com</p>
+  <div class="row" style="text-align:center">
+  	<a href="https://www.facebook.com/lammm.hoang" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-facebook-f"></i></button></a>
+  	<a href="https://www.instagram.com/hitag1/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-instagram"></i></button></a>
+  	<a href="https://github.com/tunglam2101/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-github"></i></button></a>
+  	<a href="https://www.reddit.com/user/minigaru/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-reddit"></i></button></a>
+  </div>
 </footer>
-
 <script>
 $(document).ready(function(){
   // Initialize Tooltip

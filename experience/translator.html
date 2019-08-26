@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
   <style>
   body {
@@ -146,12 +147,16 @@
   textarea {
     resize: none;
   }
+  [aria-expanded="false"] > .expanded,
+  [aria-expanded="true"] > .collapsed {
+  	display: none;
+  }
   </style>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -163,9 +168,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://tunglam2101.github.io">ABOUT ME</a></li>
+        <li><a href="http://tunglam2101.github.io">ABOUT</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">TECHNICAL PROJECTS
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
           <span class="caret"></span></a> 	
           <ul class="dropdown-menu">
             <li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
@@ -177,15 +182,14 @@
           </ul>
         </li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">VOLUNTEER & WORK EXPERIENCE
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIENCES
           <span class="caret"></span></a> 	
           <ul class="dropdown-menu">
             <li><a href="http://tunglam2101.github.io/experience/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
             <li><a href="http://tunglam2101.github.io/experience/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
           </ul>
         </li>
-        <li><a href="http://tunglam2101.github.io/interests">INTEREST & ACTIVITIES</a></li>
-        <li><a href="http://tunglam2101.github.io/contact">CONTACT</a></li>
+        <li><a href="http://tunglam2101.github.io/interests">INTERESTS</a></li>
       </ul>
     </div>
   </div>
@@ -245,9 +249,21 @@
 	</div>  
 	
 	<br>
-	<p> During Summer of 2016, I asked for a volunteer work at <b>FPT Telecom, Ho Chi Minh City, Vietnam</b>. I got assigned to positions of a Movie Translator and also a Content Reviewer, in which I collaborated with the Content Team of 7 professional employees in fields of Communication and Media to control, validate and peer-review contents uploaded on a provided web server of FPT Play.
-	<br>
-	During the whole time, I also translated Vietnamese subtitles for 3 Hong Kong dramas using Subtitle Edit. I also wrote and updated the Summary Sections for each episode of a Chinese historical drama series called <b>Princess Agents</b>.
+	<p>During Summer of 2016, I asked for a volunteer work at <b>FPT Telecom, Ho Chi Minh City, Vietnam</b>. I got assigned to positions of a Movie Translator and also a Content Reviewer, in which I collaborated with the Content Team of 7 professional colleagues in the field of Communication and Media to control, validate and peer-review contents uploaded on a provided web server of <a href="https://fptplay.vn/" target="_blank">FPT Play</a>.
+	<p class="collapse" id="block-id">
+		Due to the fact that the company had license on publishing Asian dramas but had no proper Vietnamese subtitles, I found English subtitles online and then translated those to Vietnamese. 
+		During the whole time, I translated Vietnamese subtitles for various Asian dramas using Subtitle Edit, namely <a href="https://en.wikipedia.org/wiki/See_You_Tomorrow_(2016_film)" target="_blank">See You Tomorrow</a>, <a href="https://en.wikipedia.org/wiki/The_Conmen_in_Vegas" target="_blank">The Conmen in Vegas</a>. I also wrote and updated the summary sections for each episode of a Chinese TV series called <a href="https://en.wikipedia.org/wiki/Princess_Agents" target="_blank">Princess Agents</a>.
+		<br>
+		I also worked with my colleagues to peer-review all the content uploaded on the front page, including film review, comment sections. Moreover, I helped them validating the live schedules of the TV shows for the company's <a href="https://fpt.vn/vi/khach-hang-ca-nhan/san-pham-dich-vu/dich-vu-online/fpt-play-box.html" target="_blank">FPT Play Box</a>.
+	</p>
+	<a href="#block-id" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id">
+		<span class="collapsed">
+			Show more
+		</span>
+		<span class="expanded">
+			Show Less
+		</span>
+	</a>
 	</p>	
 </div>
 
@@ -257,7 +273,16 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>TUNG LAM HOANG - 2019</a></p> 
+  <p><b>Lam Hoang - 2019</b></p>
+  <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC, Canada</p>
+  <p class="text-center"><span class="glyphicon glyphicon-phone"></span> Phone: 604-367-2051</p>
+  <p class="text-center"><span class="glyphicon glyphicon-envelope"></span> Email: minigaru2101@gmail.com</p>
+  <div class="row" style="text-align:center">
+  	<a href="https://www.facebook.com/lammm.hoang" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-facebook-f"></i></button></a>
+  	<a href="https://www.instagram.com/hitag1/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-instagram"></i></button></a>
+  	<a href="https://github.com/tunglam2101/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-github"></i></button></a>
+  	<a href="https://www.reddit.com/user/minigaru/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-reddit"></i></button></a>
+  </div>
 </footer>
 
 <script>

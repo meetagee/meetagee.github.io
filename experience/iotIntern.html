@@ -1,337 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>IOT Internship	</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <style>
-  body {
-    font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
-  }
-  h3, h4 {
-    margin: 10px 0 30px 0;
-    font-size: 20px;
-    color: #111;
-  }
-  .container {
-  	min-height: calc(100vh - 95px); 
-  }
-  .person {
-    border: 10px solid transparent;
-    margin-bottom: 25px;
-    width: 80%;
-    height: 80%;
-    opacity: 0.7;
-  }
-  .person:hover {
-    border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    margin: auto;
-  }
-  .carousel-caption h3 {
-    color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-    background: #2d2d30;
-    color: #bdbdbd;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-    border-top-right-radius: 0;
-    border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail p {
-    margin-top: 15px;
-    color: #555;
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
-  }
-  .modal-header, h4, .close {
-    background-color: #333;
-    color: #fff !important;
-    text-align: center;
-    font-size: 30px;
-  }
-  .modal-header, .modal-body {
-    padding: 40px 50px;
-  }
-  .nav-tabs li a {
-    color: #777;
-  }
-  
-  .navbar {
-    font-family: Montserrat, sans-serif;
-    margin-bottom: 0;
-    background-color: #2d2d30;
-    border: 0;
-    font-size: 11px !important;
-    letter-spacing: 4px;
-    opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-    color: #fff !important;
-  }
-  .navbar-nav li.active a {
-    color: #fff !important;
-    background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-  }
-  .open .dropdown-toggle {
-    color: #fff;
-    background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-    color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-    background-color: red !important;
-  }
-  footer {
-    background-color: #2d2d30;
-    color: #f5f5f5;
-    padding: 32px;
-  }
-  footer a {
-    color: #f5f5f5;
-  }
-  footer a:hover {
-    color: #777;
-    text-decoration: none;
-  }  
-  .form-control {
-    border-radius: 0;
-  }
-  textarea {
-    resize: none;
-  }
-  [aria-expanded="false"] > .expanded,
-  [aria-expanded="true"] > .collapsed {
-  	display: none;
-  }
-  </style>
+    <title>IOT Internship </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="http://tunglam2101.github.io"><span class="glyphicon glyphicon-console"></span><b>LAM HOANG</b></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://tunglam2101.github.io">ABOUT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
-          <span class="caret"></span></a> 	
-          <ul class="dropdown-menu">
-          	<li><a href="http://tunglam2101.github.io/techProjs/osuKeypad.html">(C/C++, ARDUINO) OSU! KEYPAD</a></li>
-            <li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
-            <li><a href="http://tunglam2101.github.io/techProjs/flynshoot.html">(C/C++) FLY N' SHOOT</a></li>
-            <li><a href="http://tunglam2101.github.io/techProjs/aoc.html">(C++) THE ART OF COMPRESSION</a></li>
-            <li><a href="http://tunglam2101.github.io/techProjs/arc4.html">(SYSTEMVERILOG) ARC4 DECRYPTION</a></li> 
-            <li><a href="http://tunglam2101.github.io/techProjs/vault.html">(PYTHON/HTML/JS) MOBILE VAULT</a></li>
-            <li><a href="http://tunglam2101.github.io/techProjs/graphs.html">(JAVA) GRAPHS, NETWORKS, AND GAMES</a></li>  
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIENCES
-          <span class="caret"></span></a> 	
-          <ul class="dropdown-menu">
-            <li><a href="http://tunglam2101.github.io/experience/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
-            <li><a href="http://tunglam2101.github.io/experience/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
-          </ul>
-        </li>
-        <li><a href="http://tunglam2101.github.io/interests">INTERESTS</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://tunglam2101.github.io"><span class="glyphicon glyphicon-console"></span><b>LAM HOANG</b></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://tunglam2101.github.io">ABOUT</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://tunglam2101.github.io/techProjs/nixieClock.html">(C/C++, ARDUINO) NIXIE CLOCK</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/nadeshiko.html">(PYTHON) NADESHIKO - DISCORD BOT</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/osuKeypad.html">(C/C++, ARDUINO) OSU! KEYPAD</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/flynshoot.html">(C/C++) FLY N' SHOOT</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/aoc.html">(C++) THE ART OF COMPRESSION</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/arc4.html">(SYSTEMVERILOG) ARC4 DECRYPTION</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/vault.html">(PYTHON/HTML/JS) MOBILE VAULT</a></li>
+                            <li><a href="http://tunglam2101.github.io/techProjs/graphs.html">(JAVA) GRAPHS, NETWORKS, AND GAMES</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIENCES
+              <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="http://tunglam2101.github.io/experience/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
+                            <li><a href="http://tunglam2101.github.io/experience/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://tunglam2101.github.io/interests">INTERESTS</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<!-- Container -->
-<div id="info" class="container">
-  	<h2>VOLUNTEER & WORK EXPERIENCE</h2>
-  	<h3><span class="glyphicon glyphicon-menu-right"></span> EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</h3>
-  	<h3><span class="glyphicon glyphicon-time"></span> July - September, 2019 
+    <!-- Container -->
+    <div id="info" class="container">
+        <h2>VOLUNTEER & WORK EXPERIENCE</h2>
+        <h3><span class="glyphicon glyphicon-menu-right"></span> EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</h3>
+        <h3><span class="glyphicon glyphicon-time"></span> July - September, 2019 
   		<br>
   		<span class="glyphicon glyphicon-map-marker"></span> FPT Telecom, Ho Chi Minh City, Vietnam</h3>
-  	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    	<!-- Indicators -->
-    	<ol class="carousel-indicators">
-	    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      		<li data-target="#myCarousel" data-slide-to="1"></li>
-      		<li data-target="#myCarousel" data-slide-to="2"></li>
-      		<li data-target="#myCarousel" data-slide-to="3"></li>
-      		<li data-target="#myCarousel" data-slide-to="4"></li>
-      		<li data-target="#myCarousel" data-slide-to="5"></li>
-    	</ol>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
 
-    	<!-- Wrapper for slides -->
-    	<div class="carousel-inner" role="listbox">
-      		<div class="item active">
-        		<img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.15752-9/69150917_516425282442272_2181882217167323136_n.jpg?_nc_cat=109&_nc_oc=AQmhUwwj4Ez3nr4RfK5xxGuGtsoYfyM1pBBciVRsB08AlsNCLD9_yd60jnnT9tagnv0&_nc_ht=scontent.fsgn2-4.fna&oh=9eb186d7542a0f21a07e146fecb9fd45&oe=5E0F82DF" alt="" style="width:500px;height:500px;">
-        		<div class="carousel-caption">
-          			<p><kbd>Breaker</kbd></p>
-        		</div>      
-      		</div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../media/breakout_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Breaker</kbd></p>
+                    </div>
+                </div>
 
-		  	<div class="item">
-		    	<img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/69427629_478990452648830_2020581975881940992_n.jpg?_nc_cat=108&_nc_oc=AQm6X1r9ndcqL3Uf3BC18BCG-sPldOqcjsM1Z4ZQwbty454hvBIYWByAOYAnnoMXEEw&_nc_ht=scontent.fsgn2-3.fna&oh=5e545662d0e8c1366c73e3cb002f7a54&oe=5E0F154B" alt="" style="width:500px;height:500px;">
-		    	<div class="carousel-caption">
-		      		<p><kbd>Fly N' Shoot'</kbd></p>
-		    	</div>      
-		  	</div>
-		
-		  	<div class="item">
-		  	  	<img src="https://scontent.fsgn2-3.fna.fbcdn.net/v/t1.15752-9/69446720_667263923794545_2867516781822476288_n.jpg?_nc_cat=110&_nc_oc=AQlyubQmWIHpjSg4DgN65IVIpFBikY32CYUn5QilC5uY5mRBqu5-V3eZ_tWtHhcuIXw&_nc_ht=scontent.fsgn2-3.fna&oh=546caaac1995332d46ed2b8d6598354e&oe=5E104965" alt="" style="width:500px;height:500px;">
-		    	<div class="carousel-caption">
-		      		<p><kbd>Development kit - 1</kbd></p>
-		    	</div>      
-		  	</div>
-		  	
-		  	<div class="item">
-		  	  	<img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.15752-9/69301352_2408627155896276_4381052257521631232_n.jpg?_nc_cat=103&_nc_oc=AQm-63Pi6z5q4MwzmloRUcYZz81drKBdsUUYo6z6_OHhtZtLiYA2sysXmw3G6JZElLE&_nc_ht=scontent.fhan2-1.fna&oh=362eaa0c87d9e8148817cd52f6ecbfe1&oe=5E0814AA" alt="" style="width:500px;height:500px;">
-		    	<div class="carousel-caption">
-		      		<p><kbd>Development kit - 2</kbd></p>
-		    	</div>      
-		  	</div>
-		  	
-		  	<div class="item">
-		  	  	<img src="https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.15752-9/69844381_2381420481912268_6379233251650699264_n.jpg?_nc_cat=107&_nc_oc=AQn_AVAZaXDwRiUK-fNdSEYeeRdq18-fSwQ04Jopj4Z2ivy3o2eYAOS0dkLig1kpOp8&_nc_ht=scontent.fsgn2-1.fna&oh=ab174eb4449373b3bbce2ededc69386e&oe=5DC79B13" alt="" style="width:500px;height:500px;">
-		    	<div class="carousel-caption">
-		      		<p><kbd>Development kit - 3	</kbd></p>
-		    	</div>      
-		  	</div>
-		  	
-		  	<div class="item">
-		  	  	<img src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.15752-9/69663454_503075413619115_2256288385222049792_n.jpg?_nc_cat=111&_nc_oc=AQkqeTXpY2BW-e5WLPXEC0WsxhYHAg0qDLkdrFBCJqkgIfWzNrCVJCGM25GYK4qnFGQ&_nc_ht=scontent.fsgn2-4.fna&oh=0f4d2cc085cfe7906e51b572ef3bb016&oe=5E08C0A5" alt="" style="width:500px;height:500px;">
-		    	<div class="carousel-caption">
-		      		<p><kbd>Development kit - 4	</kbd></p>
-		    	</div>      
-		  	</div>
-    	</div>
+                <div class="item">
+                    <img src="../media/flynshoot_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Fly N' Shoot'</kbd></p>
+                    </div>
+                </div>
 
-    	<!-- Left and right controls -->
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		  <span class="sr-only">Previous</span>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		  <span class="sr-only">Next</span>
-		</a>
-	</div>  
-	
-	<br>
-	<p>During Summer of 2019, I asked for an internship at the <b>Internet of Things (IOT) Department at FPT Telecom, Ho Chi Minh City, Vietnam</b> so that I could strengthen my Computer Engineering experience more. I got assigned to work with an instructor who helped me understanding more about embedded systems, object-oriented C/C++ programming and various real life applications/prototypes that the company had to offer such as Home Security Systems, Smartwatches, etc.
-	<p class="collapse" id="block-id">
-		During the whole time, I was lucky to have the chance to get my hands on using their frameworks and prototype boards. Technically speaking, I got the chance to improve a lot on my memory management skills through various Heap/Memory pool implementation tasks and using Event-driven architecture in C Programming. Moreover, I got to design my very first 2 embedded games <b><a href="http://tunglam2101.github.io/techProjs/breaker.html" target="_blank">Breaker</a></b> and <b><a href="http://tunglam2101.github.io/techProjs/flynshoot.html" target="_blank">Fly N' Shoot</a></b>. Furthermore, I improved a lot on my soldering skills when I got the chance to solder various microcontroller units (MCUs), integrated circuits (ICs) on prototype printed circuit boards (PCB).
-	</p>
-	<a href="#block-id" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id">
-		<span class="collapsed">
+                <div class="item">
+                    <img src="../media/front_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Development kit - 1</kbd></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../media/back_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Development kit - 2</kbd></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../media/flash_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Development kit - 3	</kbd></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../media/overall_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Development kit - 4	</kbd></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <br>
+        <p>During Summer of 2019, I asked for an internship at the <b>Internet of Things (IOT) Department at FPT Telecom, Ho Chi Minh City, Vietnam</b> so that I could strengthen my Computer Engineering experience more. I got assigned to work with an instructor who helped me understanding more about embedded systems, object-oriented C/C++ programming and various real life applications/prototypes that the company had to offer such as Home Security Systems, Smartwatches, etc.
+            <p class="collapse" id="block-id">
+                During the whole time, I was lucky to have the chance to get my hands on using their frameworks and prototype boards. Technically speaking, I got the chance to improve a lot on my memory management skills through various Heap/Memory pool implementation tasks and using Event-driven architecture in C Programming. Moreover, I got to design my very first 2 embedded games <b><a href="http://tunglam2101.github.io/techProjs/breaker.html" target="_blank">Breaker</a></b> and <b><a href="http://tunglam2101.github.io/techProjs/flynshoot.html" target="_blank">Fly N' Shoot</a></b>. Furthermore, I improved a lot on my soldering skills when I got the chance to solder various microcontroller units (MCUs), integrated circuits (ICs) on prototype printed circuit boards (PCB).
+            </p>
+            <a href="#block-id" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id">
+                <span class="collapsed">
 			Show more
 		</span>
-		<span class="expanded">
+                <span class="expanded">
 			Show Less
 		</span>
-	</a>
-	</p>	
-</div>
+            </a>
+        </p>
+    </div>
 
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <br>
+        <br>
+        <p><b>Lam Hoang - 2020</b></p>
+        <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC, Canada</p>
+        <p class="text-center"><span class="glyphicon glyphicon-phone"></span> Phone: 604-367-2051</p>
+        <p class="text-center"><span class="glyphicon glyphicon-envelope"></span> Email: lamht1998@gmail.com</p>
+        <div class="row" style="text-align:center">
+            <a href="https://www.facebook.com/lammm.hoang" target="_blank">
+                <button type="button" class="btn btn-fb"><i class="fa fa-facebook-f"></i></button>
+            </a>
+            <a href="https://www.instagram.com/hitag1/" target="_blank">
+                <button type="button" class="btn btn-fb"><i class="fa fa-instagram"></i></button>
+            </a>
+            <a href="https://github.com/tunglam2101/" target="_blank">
+                <button type="button" class="btn btn-fb"><i class="fa fa-github"></i></button>
+            </a>
+            <a href="https://www.reddit.com/user/minigaru/" target="_blank">
+                <button type="button" class="btn btn-fb"><i class="fa fa-reddit"></i></button>
+            </a>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p><b>Lam Hoang - 2019</b></p>
-  <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC, Canada</p>
-  <p class="text-center"><span class="glyphicon glyphicon-phone"></span> Phone: 604-367-2051</p>
-  <p class="text-center"><span class="glyphicon glyphicon-envelope"></span> Email: minigaru2101@gmail.com</p>
-  <div class="row" style="text-align:center">
-  	<a href="https://www.facebook.com/lammm.hoang" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-facebook-f"></i></button></a>
-  	<a href="https://www.instagram.com/hitag1/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-instagram"></i></button></a>
-  	<a href="https://github.com/tunglam2101/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-github"></i></button></a>
-  	<a href="https://www.reddit.com/user/minigaru/" target="_blank"><button type="button" class="btn btn-fb"><i class="fa fa-reddit"></i></button></a>
-  </div>
-</footer>
+    <script>
+        $(document).ready(function() {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
 
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+                    // Store hash
+                    var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
 
 </body>
-</html>
 
+</html>

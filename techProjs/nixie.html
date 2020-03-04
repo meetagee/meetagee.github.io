@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Graphs, Networks and Games</title>
+    <title>Nixie Clock</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -12,7 +12,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
-
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -62,31 +61,38 @@
     <!-- Container -->
     <div id="info" class="container">
         <h2>TECHNICAL PROJECTS</h2>
-        <h3><span class="glyphicon glyphicon-menu-right"></span> GRAPHS, NETWORKS AND GAMES</h3>
-        <h3><span class="glyphicon glyphicon-time"></span> November, 2018 
+        <h3><span class="glyphicon glyphicon-menu-right"></span> NIXIE CLOCK</h3>
+        <h3><span class="glyphicon glyphicon-time"></span> December, 2019 
   		<br>
-  		<span class="glyphicon glyphicon-map-marker"></span> UBC, Vancouver, BC, Canada</h3>
+  		<span class="glyphicon glyphicon-map-marker"></span> Ho Chi Minh City, Vietnam</h3>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img src="../media/boggle_1.jpg" alt="" style="width:500px;height:500px;">
+                    <img src="../media/nixie_2.JPG" alt="" style="width:700px;height:500px;">
                     <div class="carousel-caption">
-                        <p><kbd>GUI of Boggle - Beginning</kbd></p>
+                        <p><kbd>With case - 1</kbd></p>
                     </div>
                 </div>
 
                 <div class="item">
-                    <img src="../media/boggle_2.jpg" alt="" style="width:800px;height:500px;">
+                    <img src="../media/nixie_3.JPG" alt="" style="width:700px;height:500px;">
                     <div class="carousel-caption">
-                        <p><kbd>GUI of Boggle - End
-		      		<br>Also outputs all the possible words!</kbd></p>
+                        <p><kbd>With case - 2</kbd></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../media/nixie_1.jpg" alt="" style="width:500px;height:500px;">
+                    <div class="carousel-caption">
+                        <p><kbd>Before proper casing</kbd></p>
                     </div>
                 </div>
             </div>
@@ -103,18 +109,19 @@
         </div>
 
         <br>
-        <p><b>Graphs, Networks and Games</b> was one of the first programs that I have ever written in the past 2 years of my Computer Engineering academic life. It is a school project (or assignment, I would say) done by me and a colleague while we were in a Software Construction course. The project basically implements graphs (Adjacency List and Adjacency Matrix) along with searching algorithms (Breadth First Search and Depth First Search) and rely on those to implement a small game called <b>Boggle</b> with a provided simple Java GUI.</p>
+        <p><b>Nixie Clock</b> was a personal project that I made during 2019 Winter break. I have always been a fan of it and wanted to build one myself using my knowledge with <b>Arduino, C</b> and <b>C++</b>.</p>
         <p class="collapse" id="block-id">
-            Through the project, I learned a lot about Graphs, its' related algorithms, applications in real life and Interfaces in Java. The most challenging part about this project was that we had to modify our searching algorithms a bit differently since the game was expanded to wrap around the board. Moreover, the board could become very big and so running time was a huge problem to us. It even took us nearly 15 minutes to find all the possible combinations of words in the game. However, the project was really enjoyable and valuable for me as a starter in programming by that time.
-            <br> We coded the game in <b>Java</b> using provided interfaces and GUI for the game.
-            <br> Further details can be found on my Github repository: <code><a href="https://github.com/tunglam2101/graphs-networks-games" target="_blank">https://github.com/tunglam2101/graphs-networks-games</a></code>
+            I have always been a fan of nixie clocks, especially when I finished the 2 seasons of <a href="https://myanimelist.net/anime/9253/Steins_Gate" target="_blank">Steins;Gate</a>, where it is called the <a href="https://steins-gate.fandom.com/wiki/Divergence_Meter" target="_blank">Divergence Meter</a>.
+            <br> I started the project during summer of 2019. Unfortunately, one of the components (Nixie driver IC - SN74141) that I bought went horribly broken so the clock was not functioning correctly and it was about the time I fly back to Canada for my study. Luckily, with a bit of my dad's help in getting the new PCBs as well as the components, I was able to finish and brag about it <(￣︶￣)>.
+            <br> Well, the nixie clock is fully built based on an <a href="https://doayee.co.uk/nixie/" target="_blank">open source project</a> that I found online. It was built with 6 IN-12A bulbs (with some really cool RGB backlight) driven by HV5122 ICs. And to make it even better, the code was open source too! (づ ◕‿◕ )づ All I needed to do were soldering the components, loading the Arduino example, understanding what the code was doing and finally integrating the RTC so that it turns into a real clock.  
+            <br> Details can be found on Doayee's Github repository (once again, all the credits goes to this awesome guy for such an awesome open source project): <code><a href="https://https://github.com/doayee/Nixie" target="_blank">https://github.com/doayee/Nixie</a></code>
         </p>
         <a href="#block-id" class="btn btn-primary" data-toggle="collapse" aria-expanded="false" aria-controls="block-id">
             <span class="collapsed">
 			Show more
 		</span>
             <span class="expanded">
-			Show Less
+			Show less
 		</span>
         </a>
         </p>

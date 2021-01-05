@@ -3,150 +3,30 @@
 
 <head>
 	<title>Lam Hoang</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="./common/includeHead.js" isMainIdx="1"></script>
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="http://tunglam2101.github.io"><span class="glyphicon glyphicon-console"></span><b>LAM HOANG</b></a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="http://tunglam2101.github.io">ABOUT</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
-		  <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://tunglam2101.github.io/techProjs/nixie.html">(C/C++, ARDUINO) NIXIE CLOCK</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/nadeshiko.html">(PYTHON) NADESHIKO - DISCORD BOT</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/osuKeypad.html">(C/C++, ARDUINO) OSU! KEYPAD</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/breaker.html">(C/C++) BREAKER</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/flynshoot.html">(C/C++) FLY N' SHOOT</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/aoc.html">(C++) THE ART OF COMPRESSION</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/arc4.html">(SYSTEMVERILOG) ARC4 DECRYPTION</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/vault.html">(PYTHON/HTML/JS) MOBILE VAULT</a></li>
-							<li><a href="http://tunglam2101.github.io/techProjs/graphs.html">(JAVA) GRAPHS, NETWORKS, AND GAMES</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">EXPERIENCES
-		  <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://tunglam2101.github.io/experience/iotIntern.html">EMBEDDED SYSTEMS/IOT DEPT INTERNSHIP</a></li>
-							<li><a href="http://tunglam2101.github.io/experience/translator.html">MOVIE TRANSLATOR, CONTENT REVIEWER</a></li>
-						</ul>
-					</li>
-					<li><a href="http://tunglam2101.github.io/interests">INTERESTS</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<body id="mainBody" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- Navbar -->
+	<script src="./common/includeNav.js"></script>
 
 	<!-- Container -->
-	<div id="info" class="container">
-		<h3 class="text-center	"> HI, IT'S LAM!</h3>
+	<div id="mainIdxContainer" class="container">
+		<h3 class="text-center"> HI, IT'S LAM!</h3>
 		<p><em>Welcome to my personal webpage!</em></p>
 		<p>I am currently a 3rd year Computer Engineering student at the <b>University of British Columbia (UBC)</b> - Vancouver, Canada. I love programming and utilizing my technology-related knowledge on various applications of interests or real-life usefulness.</p>
 
 		<br></br>
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-				<li data-target="#myCarousel" data-slide-to="4"></li>
-				<li data-target="#myCarousel" data-slide-to="5"></li>
-				<li data-target="#myCarousel" data-slide-to="6"></li>
-				<li data-target="#myCarousel" data-slide-to="7"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner" role="listbox">
-				<div class="item active">
-					<img src="media/profile_pic_1.jpg" alt="" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Hello! It's me (⌐■_■)</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/nixie_2.JPG" alt="" style="width:700px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Nixie Clock project</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/nadeshiko_1.png" alt="" style="width:800px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Nadeshiko the Discord Bot</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/breakout_1.jpg" alt="" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Breaker - A C/C++ embedded game</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/flynshoot_1.jpg" alt="" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Fly N' Shoot - Another embedded game</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/osu_2.jpg" alt="Chicago" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Osu! keypad that I made</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/boggle_1.jpg" alt="" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Boggle - A Java game that I made</kbd></p>
-					</div>
-				</div>
-
-				<div class="item">
-					<img src="media/mv_1.jpg" alt="" style="width:500px;height:500px;">
-					<div class="carousel-caption">
-						<p><kbd>Mobile Vault - A group project based on Python & HTML</kbd></p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
+		<script src="./common/includeCarousel.js"
+			carouselId="mainidxCarousel"
+			isMainIdx="1"
+			descriptionArr="Hello! It's me (⌐■_■)||Nixie Clock project||Nadeshiko the Discord Bot||Breaker - A C/C++ embedded game||Fly N' Shoot - Another embedded game||Osu! keypad that I made||Boggle - A Java game that I made||Mobile Vault - A group project based on Python & HTML"
+			picFileArr="profile_pic_1.jpg, nixie_2.JPG, nadeshiko_1.png, breakout_1.jpg, flynshoot_1.jpg, osu_2.jpg, boggle_1.jpg, mv_1.jpg"
+			picWidthArr="500, 700, 800, 500, 500, 500, 500, 500"
+			picHeightArr="500, 500, 500, 500, 500, 500, 500 ,500"
+		>
+		</script>
 
 		<br></br>
 
@@ -154,8 +34,8 @@
 
 		<ul class="nav nav-tabs">
 			<li class="active"><a data-toggle="tab" href="#home">EDUCATION</a></li>
-			<li><a data-toggle="tab" href="#menu1">TECHNICAL SKILLS</a></li>
-			<li><a data-toggle="tab" href="#menu2">AWARDS</a></li>
+			<li><a data-toggle="tab" href="#techSkillMenu">TECHNICAL SKILLS</a></li>
+			<li><a data-toggle="tab" href="#awardMenu">AWARDS</a></li>
 		</ul>
 
 		<div class="tab-content">
@@ -181,19 +61,19 @@
 						</p>
 					</div>
 					<div class="col-sm-4">
-						<img src="media/ubc_logo.png" alt="ubc" class="img-thumbnail" style="width:280px; height:280px">
+						<img src="./media/ubc_logo.png" alt="ubc" class="img-thumbnail" style="width:280px; height:280px">
 					</div>
 				</div>
 			</div>
 
-			<div id="menu1" class="tab-pane fade">
+			<div id="techSkillMenu" class="tab-pane fade">
 				<div class="row">
 					<div class="col-sm-4">
 						<h3>Programming languages:</h3>
-						<a href="#proglang" data-toggle="collapse">
-							<img src="media/prog_lang_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
+						<a href="#progLang" data-toggle="collapse">
+							<img src="./media/prog_lang_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
 						</a>
-						<div id="proglang" class="collapse">
+						<div id="progLang" class="collapse">
 							<ul>
 								<li>C, C++</li>
 								<li>Java</li>
@@ -212,7 +92,7 @@
 					<div class="col-sm-4">
 						<h3>Software knowledge:</h3>
 						<a href="#software" data-toggle="collapse">
-							<img src="media/software_knowledge_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
+							<img src="./media/software_knowledge_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
 						</a>
 						<div id="software" class="collapse">
 							<ul>
@@ -230,7 +110,7 @@
 					<div class="col-sm-4">
 						<h3>Hardware & Lab-related skills:</h3>
 						<a href="#hardware" data-toggle="collapse">
-							<img src="media/hardware_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
+							<img src="./media/hardware_icon.png" class="img-circle person" alt="" style="width:256px; height:256px">
 						</a>
 						<div id="hardware" class="collapse">
 							<ul>
@@ -244,7 +124,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="menu2" class="tab-pane fade">
+			<div id="awardMenu" class="tab-pane fade">
 				<h3>UBC First Year Dean’s Honour List (May, 2017)</h3>
 				<ul>
 					<li>"Graduating students and students promoted to second, third, or fourth year with a standing of 80% or better in the previous Winter Session will receive the notation "Dean's Honour List" on their records if they passed all courses completed and carried a course load of at least 27 percentage-graded credits".</li>
@@ -258,64 +138,14 @@
 			</div>
 		</div>
 
-		<h3>Check out my resume <a href="../media/Lam_Hoang_Resume.pdf" target="_blank">here</a>!</h3>
+		<h3>Check out my resume <a href="./media/Lam_Hoang_Resume.pdf" target="_blank">here</a>!</h3>
 	</div>
 
 	<!-- Footer -->
-	<footer class="text-center">
-		<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-			<span class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-		<br>
-		<br>
-		<p><b>Lam Hoang - 2020</b></p>
-		<p class="text-center"><span class="glyphicon glyphicon-map-marker"></span> Vancouver, BC, Canada</p>
-		<p class="text-center"><span class="glyphicon glyphicon-phone"></span> Phone: 604-367-2051</p>
-		<p class="text-center"><span class="glyphicon glyphicon-envelope"></span> Email: lamht1998@gmail.com</p>
-		<div class="row" style="text-align:center">
-			<a href="https://www.facebook.com/lammm.hoang" target="_blank">
-				<button type="button" class="btn btn-fb"><i class="fa fa-facebook-f"></i></button>
-			</a>
-			<a href="https://www.instagram.com/hitag1/" target="_blank">
-				<button type="button" class="btn btn-fb"><i class="fa fa-instagram"></i></button>
-			</a>
-			<a href="https://github.com/tunglam2101/" target="_blank">
-				<button type="button" class="btn btn-fb"><i class="fa fa-github"></i></button>
-			</a>
-		</div>
-	</footer>
+	<script src="./common/includeFooter.js"></script>
 
-	<script>
-		$(document).ready(function() {
-			// Initialize Tooltip
-			$('[data-toggle="tooltip"]').tooltip();
-
-			// Add smooth scrolling to all links in navbar + footer link
-			$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-
-				// Make sure this.hash has a value before overriding default behavior
-				if (this.hash !== "") {
-
-					// Prevent default anchor click behavior
-					event.preventDefault();
-
-					// Store hash
-					var hash = this.hash;
-
-					// Using jQuery's animate() method to add smooth page scroll
-					// The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top
-					}, 900, function() {
-
-						// Add hash (#) to URL when done scrolling (default click behavior)
-						window.location.hash = hash;
-					});
-				} // End if
-			});
-		})
-	</script>
-
+	<!-- Misc -->
+	<script src="./common/smoothScroll.js"></script>
 </body>
 
 </html>

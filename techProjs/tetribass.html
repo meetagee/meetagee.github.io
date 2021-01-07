@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>TetriBASS</title>
+	<script src="../common/includeHead.js" isMainIdx="0"></script>
+</head>
+
+<body id="mainBody" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!-- Navbar -->
+	<script src="../common/includeNav.js"></script>
+
+	<!-- Container -->
+	<div id="iotIntContainer" class="container">
+		<h2>TECHNICAL PROJECTS</h2>
+		<script src="../common/includeContainerInfo.js"
+			infoName="TETRIBASS"
+			infoDate="June, 2020 - Present"
+			infoLocation="Vancouver, BC, Canada"
+		>
+		</script>
+
+		<script src="../common/includeCarousel.js"
+			carouselId="tetribassCarousel"
+			isMainIdx="0"
+			descriptionArr="Early development||Start screen - 1||Start screen - 2||Gameplay||Pause screen||Gameplay demo"
+			picFileArr="tetribass_1.png, tetribass_2.png, tetribass_3.png, tetribass_4.png, tetribass_5.png, tetribass_6.gif"
+			picWidthArr="500, 500, 950, 500, 500, 500"
+			picHeightArr="500, 500, 500, 500, 500 ,500"
+		>
+		</script>
+		<br>
+		
+		<p>
+			<b>TetriBASS</b> is a group project that 2 other colleagues and I have been working on since summer of 2020. I am a fan of the game <a href="https://en.wikipedia.org/wiki/Tetris" target="_blank">Tetris</a>. I used to spend lots of hours on playing it on the site <b>Tetris Friends</b>. Though, starting May 2019, it was permanantly shut down and I wanted to work on a summer project so here it goes! Plus, <b>Tetris Friends</b> used Adobe Flash, which is technically discontinued so implementing the game on a different platform sounds extremely exciting to me. We implemented the game using <a href="https://reactjs.org/" target="_blank">React</a> and <b>TypeScript</b>. The idea is to mimic the functionalities of <b>Tetris Friends</b> with some extensions on game modes, etc.
+			
+			<p class="collapse" id="details">
+				My main role in the project is to implement the basic game logic library, including the hard drop, ghost tile functionalities, etc. It was pretty challenging as it was the very first time I got to deal with <b>React</b> and <b>TypeScript</b>. Our initial plan was to simply use a pre-existing React Tetris library instead. However, since we would like to implement a lot more features to the game, it would be beneficial to create one our own.
+				<br>
+				We also tried to utilize and manage our project using Scrum (as I was in my <a href="https://tunglam2101.github.io/experience/firmwareDevCoop.html" target="_blank">coop term</a> at the moment so I tried to apply as much as I learned from it!) and it turned out to be very effective.
+				<br>
+				Despite the main logic of the game is working, we still haven't got the time to dig deeper into the multiplayer part so it is still a very long way to go. However, it has been a very interesting project so far for me!
+				<br>
+				Further details on the implementation can be found in our open-source repository: <a href="https://github.com/NunkuGemu/TetriBASS" target="_blank">https://github.com/NunkuGemu/TetriBASS</a>. All PRs/suggestions are welcomed :)!
+			</p>
+
+			<script src="../common/includeCollapseButton.js"
+				buttonId="details"
+			>
+			</script>
+		</p>
+	</div>
+
+	<!-- Footer -->
+	<script src="../common/includeFooter.js"></script>
+
+	<!-- Misc -->
+	<script src="../common/smoothScroll.js"></script>
+</body>
+
+</html>

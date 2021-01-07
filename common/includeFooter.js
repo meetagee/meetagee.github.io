@@ -17,5 +17,8 @@ document.write("		<\/a>");
 document.write("		<a href=\"https:\/\/github.com\/tunglam2101\/\" target=\"_blank\">");
 document.write("			<button type=\"button\" class=\"btn btn-fb\"><i class=\"fa fa-github\"><\/i><\/button>");
 document.write("		<\/a>");
+document.write("		<a href=\"https:\/\/linkedin.com\/in\/\/tunglam-hoang\" target=\"_blank\">");
+document.write("			<button type=\"button\" class=\"btn btn-fb\"><i class=\"fa fa-linkedin\"><\/i><\/button>");
+document.write("		<\/a>");
 document.write("	<\/div>");
 document.write("<\/footer>");

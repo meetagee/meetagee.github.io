@@ -24,9 +24,18 @@ for(picIdx = 0; picIdx < picFileArrLen; picIdx++)
 	document.write("		<div class=\"item " + (picIdx === 0 ? "active" : " ") + "\">");
 	if(fileSuffix === "mp4")
 	{
-		document.write("			<video width=\"" + picWidthArr[picIdx] + "\" controls muted style=\"width:100%\">");
+		document.write("			<video width=\"" + picWidthArr[picIdx] + "\" autoplay muted style=\"width:auto; margin-left:auto; margin-right:auto; display:block\">");
 		document.write("				<source src=\"" + mediaPath + picFileArr[picIdx] + "\" type=\"video\/mp4\">");
 		document.write("			<\/video>");
+		document.write("			<script>");
+		document.write("				$('video').on('play', function (e) {");
+		document.write("					$(\"#" + carouselId + "\").carousel('pause');");
+		document.write("				});");
+		document.write("				$('video').on('stop pause ended', function (e) {");
+		document.write("					$(\"#" + carouselId + "\").carousel();");
+		document.write("				});");
+		document.write("			<\/script>");
+
 	}
 	else /* jpg, mpeg, etc. */
 	{

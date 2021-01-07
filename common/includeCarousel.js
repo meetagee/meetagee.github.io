@@ -4,7 +4,6 @@ var descriptionArr = document.currentScript.getAttribute("descriptionArr").split
 var picFileArr = document.currentScript.getAttribute("picFileArr").split(", ");
 var picFileArrLen = picFileArr.length;
 var picWidthArr = document.currentScript.getAttribute("picWidthArr").split(", ");
-var picHeightArr = document.currentScript.getAttribute("picHeightArr").split(", ");
 
 document.write("<div id=\"" + carouselId + "\" class=\"carousel slide\" data-ride=\"carousel\">");
 document.write("	<!-- Indicators -->");
@@ -39,7 +38,7 @@ for(picIdx = 0; picIdx < picFileArrLen; picIdx++)
 	}
 	else /* jpg, mpeg, etc. */
 	{
-		document.write("			<img src=\"" + mediaPath + picFileArr[picIdx] + "\" alt=\"\" style=\"width:" + picWidthArr[picIdx] + "px;height:" + picHeightArr[picIdx] + "px;\">");
+		document.write("			<img src=\"" + mediaPath + picFileArr[picIdx] + "\" alt=\"\" style=\"width:" + picWidthArr[picIdx] + "px; height:auto; max-width: 100%;\">");
 	}
 	document.write("			<div class=\"carousel-caption\">");
 	document.write("				<p><kbd>" + descriptionArr[picIdx] + "<\/kbd><\/p>");
